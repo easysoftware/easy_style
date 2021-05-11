@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'Rubocop configs'
   spec.description   = 'Rubocop configs'
-  spec.homepage      = 'https://github.com/easysoftware/rys'
+  spec.homepage      = 'https://github.com/easysoftware/easy_style'
   spec.license       = 'MIT'
   spec.required_ruby_version = Gem::Requirement.new('>= 2.5.0')
 
