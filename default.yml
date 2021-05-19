@@ -34,6 +34,8 @@ Metrics/PerceivedComplexity:
 
 Rails/ApplicationRecord:
   Enabled: false
+Rails/ContentTag:
+  Enabled: false
 
 Style/Documentation:
   Enabled: false
