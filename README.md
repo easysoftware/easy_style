@@ -30,7 +30,7 @@ inherit_gem:
 
 Generate "todo" file is recommended:
 ```bash
-bundle exec rubocop --auto-gen-conf
+bundle exec rubocop --auto-gen-config --auto-gen-only-exclude --exclude-limit 10000
 ```
 
 ## Development
