@@ -9,7 +9,7 @@ TODO: Delete this and the text above, and describe your gem
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'easy_style'
+gem 'easy_style', group: %i[development]
 ```
 
 And then execute:
@@ -22,7 +22,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+In your `.rubocop.yml` file:
+```yaml
+inherit_gem:
+  easy_style: default.yml
+```
+
+Generate "todo" file is recommended:
+```bash
+bundle exec rubocop --auto-gen-conf
+```
 
 ## Development
 
