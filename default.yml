@@ -60,7 +60,3 @@ Style/SymbolArray:
   Enabled: false
 Style/EmptyMethod:
   EnforcedStyle: expanded
-
-Gemspec/DeprecatedAttributeAssignment:
-  Enabled: false
-
