@@ -7,6 +7,11 @@ AllCops:
   TargetRubyVersion: 2.6
   NewCops: enable
 
+Gemspec/RequireMFA:
+  Enabled: false
+Gemspec/DeprecatedAttributeAssignment:
+  Enabled: false
+
 Layout/EmptyLinesAroundClassBody:
   EnforcedStyle: empty_lines_special
 Layout/EmptyLinesAroundModuleBody:
