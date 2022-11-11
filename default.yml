@@ -68,3 +68,7 @@ Style/SymbolArray:
   Enabled: false
 Style/EmptyMethod:
   EnforcedStyle: expanded
+Style/FetchEnvVar:
+  Enabled: false
+Bundler/GemFilename:
+  Enabled: false
