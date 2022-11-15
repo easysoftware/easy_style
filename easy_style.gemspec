@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.description   = 'Rubocop configs'
   spec.homepage      = 'https://github.com/easysoftware/easy_style'
   spec.license       = 'MIT'
-  spec.required_ruby_version = Gem::Requirement.new('>= 2.5.0')
+  spec.required_ruby_version = "~> 3.1.2"
 
   # spec.metadata['allowed_push_host'] = 'TODO: Set to \'http://mygemserver.com\''
 
@@ -27,6 +27,6 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'rubocop', '~> 1.38.0'
+  spec.add_dependency 'rubocop', '~> 1.39.0'
   spec.add_dependency 'rubocop-rails', '~> 2.17.2'
 end
