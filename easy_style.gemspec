@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.description   = 'Rubocop configs'
   spec.homepage      = 'https://github.com/easysoftware/easy_style'
   spec.license       = 'MIT'
-  spec.required_ruby_version = "~> 3.1.2"
+  spec.required_ruby_version = ">= 3.0.0"
 
   # spec.metadata['allowed_push_host'] = 'TODO: Set to \'http://mygemserver.com\''
 
