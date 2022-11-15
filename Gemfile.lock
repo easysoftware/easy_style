@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    easy_style (1.0.0)
+    easy_style (0.3.0)
       rubocop (~> 1.38.0)
       rubocop-rails (~> 2.17.2)
 
