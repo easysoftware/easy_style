@@ -15,6 +15,8 @@ Gemspec/DeprecatedAttributeAssignment:
   Enabled: false
 Gemspec/RequireMFA:
   Enabled: false
+Gemspec/RequiredRubyVersion:
+  Enabled: false
 
 Layout/EmptyLinesAroundClassBody:
   EnforcedStyle: empty_lines_special
@@ -29,49 +31,55 @@ Lint/SuppressedException:
   AllowComments: true
 
 Metrics/AbcSize:
-  Enabled: false
+  AllowedMethods: [ 'included' ]
 Metrics/BlockLength:
-  Enabled: false
+  CountAsOne: [ 'array', 'hash', 'heredoc', 'method_call']
+  Exclude:
+    - "**/patches/**/*"
+    - "**/easy_patch/**/*"
+    - "**/spec/**/*"
 Metrics/ClassLength:
-  Enabled: false
+  CountAsOne: [ 'array', 'hash', 'heredoc', 'method_call']
 Metrics/CyclomaticComplexity:
-  Max: 13
+  AllowedMethods:
+    - included
 Metrics/MethodLength:
-  Enabled: false
+  CountAsOne: [ 'array', 'hash', 'heredoc', 'method_call']
+  AllowedMethods: [ 'included' ]
+Metrics/ModuleLength:
+  CountAsOne: [ 'array', 'hash', 'heredoc', 'method_call']
+  Exclude:
+    - "**/patches/**/*"
+    - "**/easy_patch/**/*"
 Metrics/PerceivedComplexity:
-  Max: 14
+  AllowedMethods:
+    - included
+
+Naming/VariableNumber:
+  EnforcedStyle: snake_case
 
 Rails/ApplicationRecord:
-  Enabled: false
-Rails/ContentTag:
   Enabled: false
 
 Style/Documentation:
   Enabled: false
-Style/EmptyMethod:
-  EnforcedStyle: expanded
-Style/FetchEnvVar:
-  Enabled: false
 Style/FrozenStringLiteralComment:
-  Enabled: false
+  EnforcedStyle: never
 Style/IfUnlessModifier:
   Enabled: false
 Style/HashSyntax:
   EnforcedStyle: ruby19_no_mixed_keys
-  EnforcedShorthandSyntax: either
 Style/MutableConstant:
   Enabled: false
 Style/NegatedIf:
   Enabled: false
 Style/QuotedSymbols:
   Enabled: false
+Rails/SkipsModelValidations:
+  Enabled: false
 Style/StringLiterals:
-  Enabled: false
-Style/SymbolArray:
-  Enabled: false
+  EnforcedStyle: double_quotes
 Style/TrailingCommaInHashLiteral:
-  Enabled: false
   EnforcedStyleForMultiline: consistent_comma
 Style/TrailingCommaInArrayLiteral:
-  Enabled: true
   EnforcedStyleForMultiline: consistent_comma
