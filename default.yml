@@ -58,6 +58,8 @@ Metrics/PerceivedComplexity:
   AllowedMethods:
     - included
 
+Naming/BlockForwarding:
+  Enabled: false
 Naming/VariableNumber:
   EnforcedStyle: snake_case
 
