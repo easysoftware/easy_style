@@ -65,6 +65,8 @@ Naming/VariableNumber:
 
 Rails/ApplicationRecord:
   Enabled: false
+Rails/RedundantPresenceValidationOnBelongsTo:
+  Enabled: false
 
 Style/Documentation:
   Enabled: false
