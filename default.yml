@@ -1,4 +1,4 @@
-require:
+plugins:
   - rubocop-rails
 
 inherit_mode:
@@ -7,7 +7,7 @@ inherit_mode:
 Rails:
   Enabled: true
 AllCops:
-  TargetRubyVersion: 3.1.2
+  TargetRubyVersion: 3.2
   NewCops: enable
   SuggestExtensions: false
 
@@ -27,8 +27,6 @@ Layout/EmptyLinesAroundModuleBody:
   EnforcedStyle: empty_lines_except_namespace
 Layout/LineLength:
   Enabled: false
-Layout/MultilineMethodCallIndentation:
-  EnforcedStyle: indented_relative_to_receiver
 
 Lint/SuppressedException:
   AllowComments: true

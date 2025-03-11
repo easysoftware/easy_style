@@ -1,9 +1,9 @@
 PATH
   remote: .
   specs:
-    easy_style (0.6.2)
-      rubocop (~> 1.60.0)
-      rubocop-rails (~> 2.23.1)
+    easy_style (0.7.0)
+      rubocop (~> 1.73)
+      rubocop-rails (~> 2.30)
 
 GEM
   remote: https://rubygems.org/
@@ -28,6 +28,7 @@ GEM
       concurrent-ruby (~> 1.0)
     json (2.7.2)
     language_server-protocol (3.17.0.3)
+    lint_roller (1.1.0)
     minitest (5.22.3)
     mutex_m (0.2.0)
     parallel (1.24.0)
@@ -38,26 +39,26 @@ GEM
     rack (3.0.10)
     rainbow (3.1.1)
     rake (12.3.3)
-    regexp_parser (2.9.0)
-    rexml (3.2.6)
-    rubocop (1.60.2)
+    regexp_parser (2.10.0)
+    rubocop (1.73.2)
       json (~> 2.3)
-      language_server-protocol (>= 3.17.0)
+      language_server-protocol (~> 3.17.0.2)
+      lint_roller (~> 1.1.0)
       parallel (~> 1.10)
       parser (>= 3.3.0.2)
       rainbow (>= 2.2.2, < 4.0)
-      regexp_parser (>= 1.8, < 3.0)
-      rexml (>= 3.2.5, < 4.0)
-      rubocop-ast (>= 1.30.0, < 2.0)
+      regexp_parser (>= 2.9.3, < 3.0)
+      rubocop-ast (>= 1.38.0, < 2.0)
       ruby-progressbar (~> 1.7)
-      unicode-display_width (>= 2.4.0, < 3.0)
-    rubocop-ast (1.31.3)
+      unicode-display_width (>= 2.4.0, < 4.0)
+    rubocop-ast (1.38.1)
       parser (>= 3.3.1.0)
-    rubocop-rails (2.23.1)
+    rubocop-rails (2.30.3)
       activesupport (>= 4.2.0)
+      lint_roller (~> 1.1)
       rack (>= 1.1)
-      rubocop (>= 1.33.0, < 2.0)
-      rubocop-ast (>= 1.30.0, < 2.0)
+      rubocop (>= 1.72.1, < 2.0)
+      rubocop-ast (>= 1.38.0, < 2.0)
     ruby-progressbar (1.13.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
@@ -67,6 +68,7 @@ PLATFORMS
   arm64-darwin-22
   arm64-darwin-23
   x86_64-darwin-21
+  x86_64-darwin-22
   x86_64-linux
 
 DEPENDENCIES
@@ -74,4 +76,4 @@ DEPENDENCIES
   rake (~> 12.0)
 
 BUNDLED WITH
-   2.5.9
+   2.6.5
