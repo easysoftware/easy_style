@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    easy_style (0.7.0)
+    easy_style (0.7.1)
       rubocop (~> 1.73)
       rubocop-rails (~> 2.30)
 
@@ -67,6 +67,7 @@ GEM
 PLATFORMS
   arm64-darwin-22
   arm64-darwin-23
+  arm64-darwin-24
   x86_64-darwin-21
   x86_64-darwin-22
   x86_64-linux
