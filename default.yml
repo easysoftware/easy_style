@@ -39,6 +39,7 @@ Metrics/BlockLength:
     - "**/patches/**/*"
     - "**/easy_patch/**/*"
     - "**/spec/**/*"
+    - "**/app/api/easy_swagger/**/*"
 Metrics/ClassLength:
   CountAsOne: [ 'array', 'hash', 'heredoc', 'method_call']
 Metrics/CyclomaticComplexity:
